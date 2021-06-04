@@ -1,0 +1,185 @@
+.admin-main {
+  grid-area: admin-main;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 10px 10px;
+  display: grid;
+  grid-template-rows: 90px auto;
+  grid-template-areas:
+    "admin-side" 
+    "admin-section";
+
+  @include mq("md") {
+    grid-template-rows: auto;
+    grid-template-columns: auto 111px;
+    grid-template-areas:
+      "admin-section admin-side";
+      padding: 15px 0;
+  }
+}
+
+.admin-section {
+  grid-area: admin-section;
+  display: grid;
+  grid-template-rows: 100px auto 50px;
+  background-color: $primary_white;
+  max-height: 700px;
+
+  header {
+    display: flex;
+    flex-direction: column;
+
+    div {
+      height: 50px;
+      padding-left: 15px;
+      display: flex;
+      align-items: center;
+      box-shadow: 0 6px 6px -6px $grey_anthracite;
+      z-index: 1;
+      @extend .lato_black_24, .anthracite;
+
+      img {
+        width: 22px;
+        margin-right: 10px;
+      }
+
+      &:last-child {
+        background-color: $grey_medium;
+        box-shadow: none;
+        z-index: 0;
+      }
+    }
+  }
+
+  article {
+    border: 1px solid $grey-bg;
+    display: grid;
+    grid-template-rows: 40px 1fr auto;
+    margin: 10px;
+
+    h2 {
+      text-transform: uppercase;
+      background-color: $grey_light;
+      border-bottom: 1px solid $grey-bg;
+      padding: 10px 10px;
+      color: $grey-medium;
+      @extend .lato_regular_13;
+    }
+
+    .admin-section-profile {
+      display: grid;
+      grid-template-columns: 115px auto;
+      grid-template-areas: 
+        "admin-section-avatar admin-section-name"
+        "admin-section-rom admin-section-rom";
+      padding: 10px;
+      height: auto;
+
+      @include mq("md") {
+        grid-template-rows: auto 200px;
+        grid-template-columns: 220px auto;
+        grid-template-areas: 
+        "admin-section-avatar admin-section-name"
+        "admin-section-avatar admin-section-rom";
+      }
+
+      .admin-section-avatar {
+        grid-area: admin-section-avatar;
+        max-width: 36%;
+        min-width: 105px;
+
+        @include mq("md") {
+          max-width: none;
+        }
+      }
+
+      .admin-section-name {
+        grid-area: admin-section-name;
+        background-color: $grey_light;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+
+        div {
+          padding: 0 10px;
+          justify-content: center;
+
+          &:last-child {
+            display: flex;
+            justify-content: flex-start;
+            margin-top: 12px;
+
+            @include mq("md") {
+              margin-left: 20px;
+              align-items: center;
+            }
+          }
+        }
+
+        @include mq("md") {
+          flex-direction: row;
+        }
+      }
+
+      .admin-section-rom {
+        grid-area: admin-section-rom;
+        padding: 20px;
+      }
+    }
+
+    .admin-section-partition {
+      height: 50px;
+      margin: 10px;
+      padding-top: 15px;
+      border-top: 1px solid $grey-bg;
+    }
+
+    @include mq("md") {
+      grid-template-rows: 40px auto 150px;
+    }
+  }
+
+  footer {
+    display: flex;
+    background-color: $grey_bg;
+    padding-top: 10px;
+
+    div {
+      display: flex;
+      margin-left: 10px;
+    
+      &:last-child {
+        margin-left: auto;
+        button {
+          margin: 0 3px;
+        }
+      }
+    }
+  }
+}
+
+.admin-side {
+  grid-area: admin-side;
+  background-color: $grey_bg;
+
+  ul {
+    display: flex;
+    flex-direction: row;
+
+    @include mq("md") {
+      flex-direction: column;
+    }
+  }
+}
+
+.main-grid {
+  display: grid;
+  background-color: $grey_bg;
+  height: 100%;
+  grid-template-rows: 100px 40px auto 50px;
+  grid-template-areas:
+    "header"
+    "nav"
+    "admin-main"
+    "footer";
+}

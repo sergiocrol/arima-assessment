@@ -1,0 +1,11 @@
+.container {
+  width: 100%;
+
+  @include mq("sm") {
+    max-width: $container-sm;
+  }
+
+  @include mq("md") {
+    max-width: $container-md;
+  }
+}

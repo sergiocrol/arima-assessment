@@ -1,0 +1,12 @@
+{
+  "name": "assessment",
+  "version": "1.0.0",
+  "description": "html/css assessment",
+  "main": "index.js",
+  "scripts": {
+    "sass:dev": "sass --watch src/styles/sass/main.scss src/styles/css/style.css",
+    "sass:prod": "sass src/styles/sass/main.scss src/styles/css/style.css"
+  },
+  "author": "Sergio C.",
+  "license": "ISC"
+}

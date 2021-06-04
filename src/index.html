@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/css/style.css">
+  <title>Salto | Inspired Access</title>
+</head>
+<body>
+  <div class="main-grid">
+
+    <header class="main-header">
+      <div class="container">
+        <img src="./img/logo.svg" alt="Salto" class="logo">
+        <button class="menu-button">
+          <img src="./img/menu-open.svg" alt="menu" class="menu-icon-open">
+          <img src="./img/menu-close.svg" alt="menu" class="menu-icon-close">
+        </button>
+        <div class="main-header-admin">
+          <button>
+            <span>Admin</span>
+            <img src="./img/admin.svg" alt="admin">
+          </button>
+          <button>
+            <img src="./img/logout.svg" alt="logout">
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <nav class="main-nav">
+      <ul class="container">
+        <li class="main-nav-button">
+          <span>Access points</span>
+          <span>
+            <img src="./img/down.svg" alt="down">
+          </span>
+        </li>
+        <li class="main-nav-button">
+          <span>Cardholders</span>
+          <span>
+            <img src="./img/down.svg" alt="down">
+          </span>
+        </li>
+        <li class="main-nav-button">
+          <span>Keys</span>
+          <span>
+            <img src="./img/down.svg" alt="down">
+          </span>
+        </li>
+        <li class="main-nav-button">
+          <span>Monitoring</span>
+          <span>
+            <img src="./img/down.svg" alt="down">
+          </span>
+        </li>
+        <li class="main-nav-button">
+          <span>Hotel</span>
+          <span>
+            <img src="./img/down.svg" alt="down">
+          </span>
+        </li>
+        <li class="main-nav-button">
+          <span>Tools</span>
+          <span>
+            <img src="./img/down.svg" alt="down">
+          </span>
+        </li>
+        <li class="main-nav-button">
+          <span>System</span>
+          <span>
+            <img src="./img/down.svg" alt="down">
+          </span>
+        </li>
+      </ul>
+    </nav>
+
+    <main class="admin-main container">
+      <section class="admin-section">
+
+        <header>
+          <div>
+            <img src="./img/user.svg" alt="user">
+            <h1>user 1</h1>
+          </div>
+          <div>
+            <button class="button">
+              <img class="button-image" src="./img/key.svg" alt="assign key">
+              <span>Assign key</span>
+            </button>
+          </div>
+        </header>
+
+        <article>
+          <h2>Identification</h2>
+          <div class="admin-section-profile">
+            <img src="./img/avatar.png" alt="avatar" class="admin-section-avatar">
+            <div class="admin-section-name">
+              <div class="input small">
+                <label for="title">Title</label>
+                <input type="text" id="title" name="title" />
+              </div>
+              <div class="input small">
+                <label for="first">First Name</label>
+                <input type="text" id="first" name="first" />
+              </div>
+              <div class="input small">
+                <label for="last">Last Name</label>
+                <input type="text" id="last" name="last" />
+              </div>
+              <div>
+                <button class="button">
+                  <img class="button-image" src="./img/ban.svg" alt="ban user">
+                  <span>Ban user</span>
+                </button>
+              </div>
+            </div>
+            <div class="admin-section-rom">
+              <div class="input medium">
+                <label for="rom">ROM code (Automatic assigment)</label>
+                <input type="text" id="rom" name="rom" />
+              </div>
+            </div>
+          </div>
+          <div class="admin-section-partition">
+            <div class="input medium">
+              <label for="partition">PARTITION</label>
+              <select name="partition" id="partition">
+                <option value="general">General</option>
+                <option value="first">First</option>
+                <option value="second">Second</option>
+              </select>
+            </div>
+          </div>
+        </article>
+
+        <footer>
+          <button class="button neutral">
+            <img class="button-image" src="./img/back.svg" alt="back to list">
+            <span>Back to list</span>
+          </button>
+          <div>
+            <button class="button neutral left">
+              <img class="button-image" src="./img/back.svg" alt="previous">
+            </button>
+            <button class="button neutral middle">
+              <img class="button-image" src="./img/forward.svg" alt="next">
+            </button>
+            <button class="button neutral right">
+              <img class="button-image" src="./img/add.svg" alt="add">
+            </button>
+          </div>
+          <div>
+            <button class="button small">
+              <img class="button-image" src="./img/print.svg" alt="print">
+              <span>print</span>
+            </button>
+            <button class="button small">
+              <img class="button-image" src="./img/refresh.svg" alt="refresh">
+              <span>refresh</span>
+            </button>
+            <button class="button small disabled">
+              <img class="button-image" src="./img/save.svg" alt="save">
+              <span>save</span>
+            </button>
+          </div>
+        </footer>
+
+      </section>
+      <aside class="admin-side">
+        <nav>
+          <ul>
+            <li class="side-nav-button">
+              <img src="./img/access.svg" alt="access points">
+              <span>Access points</span>
+            </li>
+            <li class="side-nav-button">
+              <img src="./img/users.svg" alt="User access levels">
+              <span>User access levels</span>
+            </li>
+            <li class="side-nav-button">
+              <img src="./img/zones.svg" alt="Zones">
+              <span>Zones</span>
+            </li>
+            <li class="side-nav-button">
+              <img src="./img/outputs.svg" alt="Outputs">
+              <span>Outputs</span>
+            </li>
+            <li class="side-nav-button">
+              <img src="./img/locations.svg" alt="Locations/functions">
+              <span>Location/ function</span>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+    </main>
+
+    <footer class="main-footer">
+      <div class="container">
+        <span>done by</span>
+        <a href="https://github.com/sergiocrol">Sergio</a>
+      </div>
+    </footer>
+
+  </div>
+  <script src="./js/menu.js"></script>
+</body>
+</html>

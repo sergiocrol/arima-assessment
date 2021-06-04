@@ -1,0 +1,10 @@
+$sm: 768px;
+$md: 992px;
+
+$container-sm: 960px;
+$container-md: 1200px;
+
+$breakpoints: (
+  sm: $sm,
+  md: $md,
+);

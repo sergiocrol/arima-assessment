@@ -1,0 +1,63 @@
+.lato_regular_base {
+  font-family: 'Lato_Regular';
+  color: $grey_dark;
+}
+
+.lato_regular_13 {
+  @extend .lato_regular_base;
+  font-size: .813rem;
+}
+
+.lato_regular_16 {
+  @extend .lato_regular_base;
+  font-size: 1rem;
+}
+
+.lato_regular_20 {
+  @extend .lato_regular_base;
+  font-size: 1.25rem;
+}
+
+.lato_bold_base {
+  font-family: 'Lato_Bold';
+  color: $grey_dark;
+}
+
+.lato_bold_10 {
+  @extend .lato_bold_base;
+  font-size: .625rem;
+}
+
+.lato_bold_13 {
+  @extend .lato_bold_base;
+  font-size: .813rem;
+}
+
+.lato_bold_16 {
+  @extend .lato_bold_base;
+  font-size: 1rem;
+}
+
+.lato_bold_20 {
+  @extend .lato_bold_base;
+  font-size: 1.25rem;
+}
+
+.lato_black_base {
+  font-family: 'Lato_Black';
+  color: $grey_dark;
+}
+
+.lato_black_24 {
+  @extend .lato_black_base;
+  font-size: 1.5rem;
+}
+
+.lato_regular_13, .lato_regular_16, .lato_regular_20, .lato_bold_10, .lato_bold_13, .lato_bold_16, .lato_bold_20, .lato_black_24 {
+  &.white {
+    color: $primary_white;
+  }
+  &.anthracite {
+    color: $grey_anthracite;
+  }
+}

@@ -1,0 +1,64 @@
+.main-header {
+  background: linear-gradient($secondary_blue, $primary_blue);
+  grid-area: header;
+  z-index: 3;
+  padding: 0 10px;
+  display: flex;
+  justify-content: center;
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.main-header-admin {
+  display: none;
+
+  button {
+    display: flex;
+    align-items: center;
+    margin-right: 15px;
+    cursor: pointer;
+
+    &:hover {
+      opacity: .7;
+    }
+
+    span {
+      @extend .lato_bold_16, .white;
+      margin-right: 5px;
+    }
+  }
+  
+  @include mq("md") {
+    display: flex;
+  }
+}
+
+.logo {
+  width: 100px;
+}
+
+.menu-button {
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+  @include mq("md") {
+    display: none;
+  }
+}
+
+.menu-icon-close, .menu-icon-open {
+  cursor: pointer;
+  width: 100%;
+}
+
+.menu-icon-close {
+  display: none;
+}

@@ -1,0 +1,32 @@
+.input {
+  display: flex;
+  flex-direction: column;
+
+  label {
+    padding-bottom: 5px;
+    @extend .lato_regular_13;
+  }
+
+  input, select {
+    height: 25px;
+    box-shadow: inset 0 8px 12px 3px $grey-light;
+    border: 1px solid $grey_medium;
+    border-radius: 3px;
+  }
+
+  &.small {
+    width: 150px;
+
+    @include mq("md") {
+      width: auto;
+    }
+  }
+
+  &.medium {
+    width: 250px;
+  }
+
+  &.full {
+    width: 100%;
+  }
+}
